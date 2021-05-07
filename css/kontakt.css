@@ -1,0 +1,79 @@
+/* Style dla pojemnika, fieldset'a i stopki*/
+#container {
+    width: 95%;
+    height: 870px;
+    margin: auto;
+    color: white;
+    margin-top: 100px;
+    background-color: #1A1B1F;
+}
+fieldset {
+    border: none;
+    padding: 40px;
+}
+#footer {
+    margin-top: 40px;
+}
+
+/* Style dla obu input'ów. Poniższa operacja ma na celu ograniczenie powtórzeń. */
+input[type=text], input[type=submit]{
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Style dla input'a typu text */
+input[type=text] {
+    padding: 12px 16px;
+    margin: 12px 0;
+    background-color: transparent;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px solid rgb(179, 179, 179);
+    box-sizing: border-box;
+}
+
+/* Style dla input'a typu submit */
+input[type=submit] {
+    background-color: #29adb9;
+    font-size: 24px;
+    padding: 14px 20px;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #24929c;
+}
+
+/* Style dla textarea */
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    color: white;
+    background-color: transparent;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Style dla nazw kategorii */
+h1:first-of-type {
+    margin-top: 0;
+}
+h1 {
+    color: #2ec5d3;
+}
+
+/* Style dla nazw input'ów */
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ccc;
+    margin: 0;
+}

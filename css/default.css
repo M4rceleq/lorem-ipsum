@@ -1,0 +1,208 @@
+/* Klasa, która umożliwia wyłączenie transition przed załadowaniem się storny */
+.preload-transitions * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #22242A;
+}
+
+/* Style nawigacji i stopki */
+#nav {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    bottom: 5px;
+    height: 60px;
+    background-color: #1A1B1F;
+    box-shadow: 0 0 5px 1px #888888;
+}
+
+#footer {
+    margin-top: 60px;
+    width: 100%;
+    height: 60px;
+    background-color: #1A1B1F;
+    box-shadow: 0 0 5px 1px #888888;
+}
+
+#nav ul, #footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 40px;
+}
+
+#nav a, #footer a {
+    display: block;
+    float: right;
+    font-size: 20px;
+    padding: 18px 30px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#nav li a:hover, #footer a:hover {
+    background-color: #0ba6cdab;
+}
+
+/* Style dla napisu "LOREM IPSUM" */
+#logo {
+    margin-left: 40px;
+    float: left;
+}
+
+#logo a {
+    padding: 12px 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #bdbdbd;
+}
+
+#logo span {
+    color: #29adb9;
+}
+
+#logo a:hover {
+    background-color: transparent !important;
+}
+
+/* Style dla odnośnika do strony, na której znajduje się użytkownik */
+#active a {
+    font-weight: 500;
+    color: #0ba6cd;
+}
+
+#active a:hover {
+    background-color: #0ba6cdab;
+    color: white;
+}
+
+.copyright {
+    display: block;
+    float: left;
+    color: #bbbbbb;
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* Efekt magiczengo podkreślenia elementu a*/
+.magic {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    background: linear-gradient(to right, #b4f9ff, #2dbdca 60%, #5df1ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.magic::before {
+    content: '';
+    position: absolute;
+    top: 23px;
+    display: inline-block;
+    height: 2px;
+    width: 0;
+    background-color: #40bcc7;
+    transition: width 0.3s ease-in-out;
+}
+
+.magic:hover::before {
+    width: 118px;
+}
+
+/* Drugi panel nawigacyjny - możliwy do zobaczenia przy szerokości niższej lub równej 860px */
+#nav2 {
+    display: none;
+    z-index: 10;
+    background-color: rgb(34, 34, 36);
+    position: fixed;
+    height: 100vh;
+    width: 350px;
+    top: 60px;
+    right: -350px;
+}
+
+#nav2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav2 a {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    padding: 18px 30px;
+    color: white;
+    background-color: #29adb9;
+    text-decoration: none;
+    transition: .2s background-color ease-in-out;
+}
+
+#nav2 a:hover {
+    background-color: #14809b;
+}
+
+/* Style dla odnośnika strony, na której znajduje się obecnie użytkownik */
+#active_panel a {
+    background-color: #0d5769;
+}
+
+#active_panel a:hover {
+    background-color: #09495a;
+}
+
+/* Style dla trzech poziomych pasków, przypominających hamburgera */
+#hamburger {
+    display: none;
+}
+
+#hamburger a {
+    padding-top: 15px;
+    margin-right: 30px;
+}
+
+/* Dostosowania umożliwiające bezproblemowe korzystanie ze strony */
+@media (max-width: 780px){
+    #footer ul {
+        display: none;
+    }
+}
+
+@media (max-width: 885px){
+    #nav ul {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    #nav2 {
+        display: block;
+    }
+}
+
+/* Style dla scrollbar'a */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #1b1c22;
+}

@@ -1,0 +1,87 @@
+/* Style dla pojemnika */
+#container {
+    width: 95%;
+    height: 490px;
+    margin: auto;
+    margin-top: 111px;
+    background-color: #1A1B1F;
+}
+
+/* Style dla diva, który wyświetla odpowiednio jego dzieci właściwością flex */
+#field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Pojedyncze pudełko */
+.box {
+    box-shadow: 2px 1px 8px 1px rgb(41, 41, 41);
+    border-radius: 5%;
+    margin: 15px;
+    overflow: hidden;
+    margin-top: 45px;
+    background-color: #363636;
+    width: 300px;
+    height: 400px;
+}
+
+/* Styl dla tytułu */
+.title {
+    z-index: 2;
+    font-weight: bold;
+    color: #65c6d1;
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* Style dla obrazków i efektu przybliżenia */
+#container img {
+    filter: grayscale(100%);
+    transition: 1s transform;
+}
+
+.image {
+    overflow: hidden;
+}
+
+#container img:hover {
+    transform: scale(1.2);
+}
+
+/* Dostosowania umożliwiające bezproblemowe korzystanie ze strony */
+@media (max-width: 1420px){
+    .box {
+        margin: 15px 75px;
+        /* 75px */
+        margin-top: 45px;
+    }
+    #container {
+        height: 950px;
+    }
+}
+
+@media (max-width: 965px){
+    .box {
+        margin: 15px;
+        margin-top: 45px;
+    }
+    #container {
+        height: 950px;
+    }
+}
+
+@media (max-width: 715px){
+    #container {
+        height: 1870px;
+    }
+}
+
+@media (max-width: 380px){
+    .box {
+        display: none;
+    }
+}

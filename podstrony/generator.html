@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lorem Ipsum - Generator</title>
+        <meta charset="UTF-8">
+        <meta author="Marcel Maciaszczyk">
+        <link rel="stylesheet" type="text/css" href="./../css/default.css">
+        <link rel="stylesheet" type="text/css" href="./../css/generator.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", () => {
+                let x = document.querySelector('.preload-transitions');
+                x.classList.remove('preload-transitions');
+            });
+        </script>
+    </head>
+    <body class="preload-transitions">
+        <div id="nav">
+            <div id="hamburger"><a href="#" onclick="slide()"><img src="./../img/hamburger.png" height="30px"></a></div>
+            <div id="logo"><a href="./../index.html"><span>Lorem</span> Ipsum</a></div>
+            <ul>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li id="active"><a href="generator.html">Generator</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="./../index.html">Home</a></li>
+            </ul>
+        </div>
+        <div id="nav2">
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li id="active_panel"><a href="generator.html">Generator</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div id="container">
+            <fieldset>
+                <form action="generator.php">
+                    <h1>Opcje generatora</h1>
+    
+                    <h4>Ilość</h4>
+                    <input type="number" id="amount" name="name" value="1" placeholder="Jan Kowalski">
+
+                    <h4>Typ</h4>
+                    <div class="test">
+                    <div>
+                        <input type="radio" id="paragraphs" name="type" value="paragraphs"
+                               checked>
+                        <label for="paragraphs">akapity</label>
+                      </div>
+                      
+                      <div>
+                        <input type="radio" id="lists" name="type" value="lists">
+                        <label for="lists">listy</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" id="bytes" name="type" value="bytes">
+                        <label for="bytes">bajty</label>
+                      </div>
+                    </div>
+    
+                    <h4>Częstotliwość</h4>
+                    <div class="test">
+                        <div>
+                            <input type="radio" id="constant" name="length" value="constant" checked>
+                            <label for="constant">stała</label>
+                            <div>dokładnie <input type="number" value="180"> elementów</div>
+                        </div>
+                      
+                        <div>
+                            <input type="radio" id="changeable" name="length" value="changeable">
+                            <label for="changeable">zmienna</label>
+                            <div>od <input type="number" value="100"> do <input type="number" value="180"> elementów</div>
+                        </div>
+                    </div>
+
+                    <h4>Inne</h4>
+                    <div class="test">
+                        <div>
+                            <input type="checkbox" id="scales" name="lorem" checked>
+                            <label for="lorem">Zacznij 'Lorem ipsum dolor sit amet...'</label>
+                          </div>
+                          
+                          <div>
+                            <input type="checkbox" id="horns" name="html">
+                            <label for="html">Wyświetl jako kod HTML</label>
+                          </div>
+                    </div>
+                    <input type="submit" value="Generuj">
+                  </form>
+                </fieldset>
+        </div> 
+
+        <div id="footer">
+            <div class="copyright"><b>Autor:</b> Marcel Maciaszczyk 1F<br><b>Źródło:</b> https://pl.lipsum.com/</div>
+            <ul>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li id="active"><a href="generator.html">Generator</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="./../index.html">Home</a></li>
+            </ul>
+        </div>
+    </body>
+    <script type="text/javascript" src="./../js/script.js"></script>
+</html>

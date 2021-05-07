@@ -1,0 +1,45 @@
+/* Style dla pojemnika */
+#container {
+    margin-top: 80px; 
+ }
+
+ /* Style dla tytułów */
+.header {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #111215;
+    color: white;
+    font-size: 40px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 5px 120px 5px 60px;
+}
+
+/* Style dla zawartości tekstu */
+.content {
+    margin: 30px 0;
+    padding: 5px 20px;
+    color: rgb(201, 201, 201);
+    font-size: 20px;
+    text-align: justify;
+    background-color: #1A1B1F;
+}
+
+/* Dostosowania umożliwiające bezproblemowe korzystanie ze strony */
+@media (max-width: 635px){
+    .header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 525px){
+    .header {
+        padding: 5px 60px 5px 60px;
+    }
+}
+
+@media (max-width: 460px){
+    .header {
+        padding: 5px 40px 5px 20px;
+    }
+}

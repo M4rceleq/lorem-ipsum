@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lorem Ipsum - Galeria</title>
+        <meta charset="UTF-8">
+        <meta author="Marcel Maciaszczyk">
+        <link rel="stylesheet" type="text/css" href="./../css/default.css">
+        <link rel="stylesheet" type="text/css" href="./../css/galeria.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", () => {
+                let x = document.querySelector('.preload-transitions');
+                x.classList.remove('preload-transitions');
+            });
+        </script>
+    </head>
+    <body class="preload-transitions">
+        <div id="nav">
+            <div id="hamburger"><a href="#" onclick="slide()"><img src="./../img/hamburger.png" height="30px"></a></div>
+            <div id="logo"><a href="./../index.html"><span>Lorem</span> Ipsum</a></div>
+            <ul>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li id="active"><a href="galeria.html">Galeria</a></li>
+                <li><a href="./../index.html">Home</a></li>
+            </ul>
+        </div>
+        <div id="nav2">
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li id="active_panel"><a href="galeria.html">Galeria</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div id="container">
+            <div id="field">
+                <div class="box">
+                    <div class="image"><img src="./../img/foto350_1.png" alt="tekst starożytny"></div>
+                    <div class="title">„Lorem Ipsum”</div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="./../img/foto350_2.png" alt="tekst starożytny"></div>
+                    <div class="title">„Lorem Ipsum”</div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="./../img/foto350_3.png" alt="tekst starożytny"></div>
+                    <div class="title">„Lorem Ipsum”</div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="./../img/foto350_4.png" alt="tekst starożytny"></div>
+                    <div class="title">„Lorem Ipsum”</div>
+                </div>
+            </div>
+        </div> 
+
+        <div id="footer">
+            <div class="copyright"><b>Autor:</b> Marcel Maciaszczyk 1F<br><b>Źródło:</b> https://pl.lipsum.com/</div>
+            <ul>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li id="active"><a href="galeria.html">Galeria</a></li>
+                <li><a href="./../index.html">Home</a></li>
+            </ul>
+        </div>
+    </body>
+    <script type="text/javascript" src="./../js/script.js"></script>
+</html>

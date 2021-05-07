@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lorem Ipsum - Kontakt</title>
+        <meta charset="UTF-8">
+        <meta author="Marcel Maciaszczyk">
+        <link rel="stylesheet" type="text/css" href="./../css/default.css">
+        <link rel="stylesheet" type="text/css" href="./../css/kontakt.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", () => {
+                let x = document.querySelector('.preload-transitions');
+                x.classList.remove('preload-transitions');
+            });
+        </script>
+    </head>
+    <body class="preload-transitions">
+        <div id="nav">
+            <div id="hamburger"><a href="#" onclick="slide()"><img src="./../img/hamburger.png" height="30px"></a></div>
+            <div id="logo"><a href="./../index.html"><span>Lorem</span> Ipsum</a></div>
+            <ul>
+                <li id="active"><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="./../index.html">Home</a></li>
+            </ul>
+        </div>
+        <div id="nav2">
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li id="active_panel"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div id="container">
+            <fieldset>
+            <form action="form.php">
+                <h1>Dane kontaktowe</h1>
+
+                <h4>Imię i nazwisko</h4>
+                <input type="text" name="name" placeholder="Jan Kowalski">
+                <h4>E-mail</h4>
+                <input type="text" name="email" placeholder="jan@poczta.pl">
+                <h4>Numer telefonu</h4>
+                <input type="text" name="phone" placeholder="123456789">
+
+                <h1>Treść wiadomości</h1>
+
+                <h4>Temat</h4>
+                <input type="text" name="topic" placeholder="Pytanie ogólne">
+                <h4>Treść</h4>
+                <textarea name="message"></textarea>
+
+                <input type="submit" value="Wyślij formularz">
+              </form>
+            </fieldset>
+        </div> 
+
+        <div id="footer">
+            <div class="copyright"><b>Autor:</b> Marcel Maciaszczyk 1F<br><b>Źródło:</b> https://pl.lipsum.com/</div>
+            <ul>
+                <li id="active"><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="./../index.html">Home</a></li>
+            </ul>
+        </div>
+    </body>
+    <script type="text/javascript" src="./../js/script.js"></script>
+</html>
